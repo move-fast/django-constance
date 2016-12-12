@@ -150,7 +150,11 @@ class ConstanceForm(forms.Form):
 
 class ConstanceAdmin(admin.ModelAdmin):
     class Media:
-        js = ('//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js',)
+        js = (
+                '//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js',
+                '//cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js',
+                '/static/django_select2/django_select2.js',
+             )
     change_list_template = 'admin/constance/change_list.html'
     change_list_form = ConstanceForm
 
