@@ -149,6 +149,8 @@ class ConstanceForm(forms.Form):
 
 
 class ConstanceAdmin(admin.ModelAdmin):
+    class Media:
+        js = ('//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js',)
     change_list_template = 'admin/constance/change_list.html'
     change_list_form = ConstanceForm
 
