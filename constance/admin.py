@@ -151,7 +151,7 @@ class ConstanceForm(forms.Form):
 class ConstanceAdmin(admin.ModelAdmin):
     class Media:
         js = (
-                '//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js',
+                '//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js',
                 '//cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js',
                 '/static/django_select2/django_select2.js',
              )
